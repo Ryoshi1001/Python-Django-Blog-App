@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+    <!-- for loop in Django -->
+    {% for post in posts %}
+
+        <h2>Blog Post Title</h2>
+        <p><strong>By: </strong>{{post.author}}</p>
+        <p><strong>Published on: </strong>{{post.date_posted}}</p>
+        <p>{{post.content}}</p>
+        <button class="bg-custom-red">button</button>
+    {% endfor %}
+{% endblock  %}
+
+
+
+

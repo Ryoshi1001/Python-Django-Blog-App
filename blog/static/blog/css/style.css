@@ -106,12 +106,12 @@ ul {
 
 .site-header .navbar-nav .nav-link {
   color: #fff;
+  width: fit-content; 
 }
 
 .site-header .navbar-nav .nav-link:hover {
   color: #ffffff;
   text-decoration: underline;
-  transform: scale(1.05);
 }
 
 .site-header .navbar-nav .nav-link.active {

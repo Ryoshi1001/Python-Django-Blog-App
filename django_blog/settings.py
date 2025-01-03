@@ -142,4 +142,6 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 # create new setting: for Login in Django
 LOGIN_REDIRECT_URL = 'blog-home'
 
-LOGOUT_REDIRECT_URL = 'logout'
+# LOGOUT_REDIRECT_URL = 'logout'
+
+LOGIN_URL = 'login'

@@ -39,7 +39,8 @@ media/
 Thumbs.db        # Windows thumbnail cache
 
 # Environment variables file
-.env             # Environment variables file
+.env             
+# Environment variables file
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/

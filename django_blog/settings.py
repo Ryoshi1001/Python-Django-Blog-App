@@ -28,7 +28,7 @@ SECRET_KEY = config('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://django-blog-c6px.onrender.com']
+ALLOWED_HOSTS = ['django-blog-c6px.onrender.com', '*']
 
 
 # Application definition

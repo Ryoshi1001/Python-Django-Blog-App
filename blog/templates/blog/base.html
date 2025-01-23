@@ -104,15 +104,15 @@
       </nav>
     </header>
     <main class="container mt-3">
-      <div class="d-flex flex-row gap-3">
-        <div class="col-md-8">
+      <div class="d-flex flex-column d-md-flex flex-md-row gap-3">
+        <div class="col-12 col-md-8">
           {% if messages %} {% for message in messages %}
           <div class="alert alert-{{ message.tags }}">{{ message }}</div>
           {% endfor %} {% endif %} {% block content %} {% endblock %}
         </div>
-        <div class="content-section col-md-4">
+        <div class="content-section col-12 col-md-4">
           <h3>Blog Sidebar</h3>
-          <p class="text-muted">Put Blog information here if needed</p>
+          <p class="text-muted">Blog Updates</p>
           <ul class="list-group">
             <li class="list-group-item list-group-item-light">Latest Posts</li>
 
@@ -132,6 +132,9 @@
 
             <li class="list-group-item list-group-item-light">Announcements</li>
             <li class="list-group-item list-group-item-light">Calendars</li>
+            <div>
+              
+            </div>
             <li class="list-group-item list-group-item-light">etc</li>
           </ul>
         </div>

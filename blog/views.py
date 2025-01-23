@@ -1,6 +1,5 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Post
-from .utils import Calendar
 from django.contrib.auth.models import User
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic import (
@@ -15,8 +14,6 @@ from django.views.generic import (
 # view for blog calendar in base.html file by adding context to home path
 
 def home(request): 
-  cal = Calendar() # instance of Calendar
-  html_cal = cal.formatmonth() # get html of month
   context = {
     'posts': Post.objects.all(), 
   }

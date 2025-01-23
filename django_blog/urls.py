@@ -36,7 +36,8 @@ urlpatterns = [
          auth_views.PasswordResetConfirmView.as_view(template_name='users/password_reset_confirm.html'), name='password_reset_confirm'),
     path('password-reset-complete/', 
          auth_views.PasswordResetCompleteView.as_view(template_name='users/password_reset_complete.html'), name='password_reset_complete'),
-    path('__reload__/', include('django_browser_reload.urls'))
+    path('__reload__/', include('django_browser_reload.urls')),
+
 ]
 
 if settings.DEBUG: 
